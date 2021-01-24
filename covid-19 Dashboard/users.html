@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Coronavirus (COVID-19) dashboard to show the dynamics of Сoronavirus distribution per country">
+        <meta name="author" content="Farzaneh Salehi">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Style Css-->
+        <link rel="stylesheet" href="Css/style.css">
+
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>
+            Covid 19 Tracker-Sokan Edition
+        </title>
+    </head>
+    <body>
+        <div class="container-fluid no-padd">
+            <div class="row no-margin">
+                <div class="col-md-2 no-padd">
+                    <div class="sideBar"  id="myTopnav">
+                        <div class="topMenu">
+                                <!-- covid 19 Tracker with logo-->
+                                <div class="titleSideBar">
+                                    <!-- blue circle-->
+                                    <div class="logoCovid">
+                                        <!-- D -->
+                                        <div class="logoD">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="txtTitleSideBar">
+                                    Covid 19 Tracker
+                                </div>
+                        </div>
+                        <!-- firstmenu of side bar-->
+                        <div class="firstMenu">
+                            <a href="index.html"  > <i class="fa fa-pie-chart" aria-hidden="true"></i>overview</a>
+                            <a href="users.html" class="active"><i class="fa fa-user-circle" aria-hidden="true"></i>Users</a>
+                            <a href="#aboutUs"><i class="fa fa-users" aria-hidden="true"></i>About us</a>
+                            <a href="#contactUs"><i class="fa fa-at" aria-hidden="true"></i>Contact us</a>
+                            <a href="#Link4"><i class="fa fa-home"></i>Link Number 4</a>
+                            <a href="#Link5"><i class="fa fa-home"></i>Link Number 5</a>
+                        </div>
+                          <!-- second menu of side bar/below line-->
+                        <div class="logSettingMenu">
+                            <a href="#settings" class="active" > <i class="fa fa-cog" aria-hidden="true"></i>settings</a>
+                            <a href="#logOut"><i class="fa fa-sign-out" aria-hidden="true"></i>logOut</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="header row">
+                          <!-- title of page -->
+                        <div class="titleHeader col-sm-7 col-md-7">
+                            <p class="titleOfProject">
+                                 Patients
+                            </p>
+                        </div>
+                          <!-- search and notification-->
+                        <div class="notifMenu col-sm-2">
+                            <a href="#searchBar" class="col-sm-6"> <i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a href="#notification" class="col-sm-6"> <i class="fa fa-bell" aria-hidden="true"></i></a>
+                        </div>
+                          <!-- visit profile-->
+                        <div class="profile col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-8 profileBox">
+                                    <a class="profileName"></a>
+                                        Farzaneh Salehi
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="Image/2.jpeg"/>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                      <!-- users/this is hard code because we need a form to receive information,sql and php or node.js to receive information from the database and deliver to JS/This is done for the next phase -->
+                    <div class="users">
+                        <div class="titleHeader col-sm-12">
+                            <p class="titleOfProject">
+                                 All Patients
+                            </p>
+                        </div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">User Details</th>
+                                <th scope="col">Birth Details</th>
+                                <th scope="col">Registration Date</th>
+                                <th scope="col">Infection Level</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/2.jpeg" class="profileList"/>
+                                    <div class="tableBox">   
+                                    <p class="titleTd">Contact Email not Linked</p>
+                                    <p class="txtTd">Updated 1 day ago</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                         <p class="titleTd">Tehran</p>
+                                    <p class="txtTd">on 24.05.2000</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">May 26, 2019</p>
+                                    <p class="txtTd">6:30 PM</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <p class="infectionLvlHigh">
+                                        HIGH
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/4.jpeg"  class="profileList"/>
+                                    <div class="tableBox">
+                                         <p class="titleTd">Adding Images to Featured Posts</p>
+                                    <p class="txtTd">Updated 1 day ago</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                         <p class="titleTd">Los Angeles</p>
+                                    <p class="txtTd">on 24.05.2000</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                         <p class="titleTd">May 26, 2019</p>
+                                    <p class="txtTd">8:00 AM</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <p class="infectionLvlLow">
+                                        low
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/5.jpeg" class="profileList"/>
+                                    <div class="tableBox">
+                                         <p class="titleTd">When will I be charged this month?</p>
+                                    <p class="txtTd">Updated 1 day ago</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                         <p class="titleTd">New York</p>
+                                    <p class="txtTd">on 24.05.1990</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                       <p class="titleTd">May 26, 2019</p>
+                                    <p class="txtTd">7:30 PM</p>  
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <p class="infectionLvlHigh">
+                                        HIGH
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/4.jpeg"  class="profileList"/>
+                                    <div class="tableBox">
+                                         <p class="titleTd">Payment not going through</p>
+                                    <p class="txtTd">Updated 2 day ago</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">Texas</p>
+                                    <p class="txtTd">on 24.05.1986</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                         <p class="titleTd">May 25, 2019</p>
+                                    <p class="txtTd">5:00 PM</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <p class="infectionLvlNormal">
+                                        Normal
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/2.jpeg" class="profileList"/>
+                                    <div class="tableBox">
+                                        <p class="titleTd">Unable to add replies</p>
+                                    <p class="txtTd">Updated 2 day ago</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">Tabriz</p>
+                                    <p class="txtTd">on 24.05.2001</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                         <p class="titleTd">May 25, 2019</p>
+                                    <p class="txtTd">4:00 PM</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <p class="infectionLvlHigh">
+                                        HIGH
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/5.jpeg"  class="profileList"/>
+                                    <div class="tableBox">
+                                         <p class="titleTd">Downtime since last week</p>
+                                    <p class="txtTd">Updated 3 day ago</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                       <p class="titleTd">New York</p>
+                                    <p class="txtTd">on 23.05.1989</p>  
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                       <p class="titleTd">May 25, 2019</p>
+                                    <p class="txtTd">2:00 PM</p>  
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <p class="infectionLvlNormal">
+                                        Normal
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/2.jpeg"  class="profileList"/>
+                                    <div class="tableBox">
+                                         <p class="titleTd">Referral Bonus</p>
+                                    <p class="txtTd">Updated 4 day ago</p>
+                                    </div>
+                                   
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">Delhi</p>
+                                    <p class="txtTd">on 22.05.2005</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">May 25, 2019</p>
+                                    <p class="txtTd">11:30 AM</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <p class="infectionLvlLow">
+                                        low
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">
+                                    <img src="Image/4.jpeg"  class="profileList"/>
+                                    <div class="tableBox">
+                                        <p class="titleTd">How do I change my password?</p>
+                                    <p class="txtTd">Updated 6 day ago</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">Seoul</p>
+                                    <p class="txtTd">on 21.05.1995</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="tableBox">
+                                        <p class="titleTd">May 24, 2019</p>
+                                    <p class="txtTd">1:00 PM</p>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <p class="infectionLvlNormal">
+                                        Normal
+                                    </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+       
+        <!-- Optional JavaScript -->
+        <script src="Js/main.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

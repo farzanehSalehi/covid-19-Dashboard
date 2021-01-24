@@ -1,0 +1,341 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+} 
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    letter-spacing: 0.2px;
+    background: #F7F8FC;;
+}
+
+.no-padd {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.sideBar{
+    background: #363740;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sideBar a {
+    float: left;
+    display: block;
+    color: #A4A6B3;
+    padding: 15px 0px;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.topMenu {
+    margin-bottom: 95px;
+}
+
+.titleSideBar {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    left: 10px;
+    top: 18px;
+    float: left;
+}
+    
+.logoCovid {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #3751FF;
+    border-radius: 50%;
+}
+    
+.logoD{
+    position: absolute;
+    left: 34.38%;
+    right: 28.12%;
+    top: 28.12%;
+    bottom: 28.12%;
+    border-radius: 0px 20px 20px 0px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.txtTitleSideBar {
+    font-weight: bold;
+    color: #A4A6B3;
+    font-size: 13px;
+    float: left;
+    margin: 25px 13px 0px 18px;
+}
+
+.firstMenu , .logSettingMenu {
+    float: left;
+display: grid;
+width: 100%;
+}
+
+.firstMenu a.active , .logSettingMenu a:active{
+    background: #57585B;
+    border-left: 3px solid #DDE2FF;
+    color: #fff;
+}
+
+.sideBar .icon {
+    display: none;
+  }
+
+.sideBar a:hover:not(.active){
+    background-color: #555;
+    padding: 15px 15px;
+}
+
+.firstMenu a:last-child {
+    border-bottom: 1px solid #555;
+}
+
+.firstMenu i , .logSettingMenu i{
+    padding: 0px 15px;
+}
+
+.header{
+    margin: 10px 0px;
+}
+
+.header .titleHeader .titleOfProject {
+    font-weight: bold;
+    font-size: 21px;
+    float: left;
+    margin-top: 10px;
+}
+
+.notifMenu a {
+    float: left;
+    padding: 10px;
+    color: #C5C7CD;
+    text-align: center;
+}
+      
+.notifMenu a:hover {
+    background-color: #57585b;
+}
+
+ .profileBox{
+    font-weight: 600;
+    font-size: 14px;
+    color: #252733;
+    padding-left: 28px;
+    border-left: 1px solid #C5C7CD;
+    float: left;
+    padding-left: 30px;
+    margin-top: 11px;
+    padding-right: 0px;
+ }  
+
+.profile img {
+    height: 44px;
+    right: 0px; 
+    border-radius: 50%;
+}
+
+.card {
+    position: absolute;
+    height: 134px;
+    left: 285px;
+    right: 33px;
+    top: 128px;
+}
+
+.nums {
+    background: #fff;
+    border:1px solid rgb(175, 175, 175);
+    float:left;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.nums:hover .mb-0 a{
+    color: #3751FF;
+}
+
+.nums:hover {
+    border-color: #3751FF;
+    cursor: pointer;
+    color: #3751FF;
+}
+
+.nums .mb-0 .numsText {
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    color: #C5C7CD;  
+}
+
+.nums .mb-0 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.nums .mb-0 .numbers{
+    padding: 20px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.borderBox {
+    margin: 10px 0px;
+    padding: 15px;
+    border: 1px solid #C5C7CD;
+    border-radius: 10px;
+    background: #fff;
+} 
+
+.todayTrends .titleHeader {
+    font-weight: bold;
+    margin: 10px 0px 0px 10px;
+}
+
+.profileList{
+    width: 10%;
+    float: left;
+    margin-right: 30px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.titleTd{
+    font-size: 14px;
+}
+
+.txtTd{
+    color: #C5C7CD;
+    font-size: 12px;
+}
+
+.tableBox{
+    padding: 0px 0px;
+}
+
+.users .table th{
+    color: #C5C7CD;
+}
+
+.infectionLvlHigh {
+    border: 1px solid #F12B2C;
+    padding: 5px 10px;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    background: #F12B2C;
+}
+
+.infectionLvlNormal {
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    background: #29CC97;
+}
+
+.infectionLvlLow {
+    padding: 5px 10px;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    background: #FEC400;
+}
+
+.users{
+    background: #fff;
+    padding: 20px;    
+    border: 1px solid #a4a6b3;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.users .table th{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 768px) {
+    .firstMenu  , .logSettingMenu{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 20px;
+    }
+    .firstMenu a , .logSettingMenu a{
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+   .sideBar a.icon{display: block;}
+   .sideBar a{display: none;}
+   .sideBar a.icon {
+     float: right;
+     display: block;
+     margin-left: 15px;
+     font-size: 30px;
+     position: absolute;
+     top: 0px;
+     right: 15px;
+   }
+     .topMenu {
+         margin-bottom: 20px;
+     }
+   .sideBar.responsive {position: relative;}
+   .sideBar.responsive a.icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+     padding: 11px;
+   }
+   .sideBar.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+     .header .titleHeader .titleOfProject{
+         font-size: 15px;
+     }
+     .notifMenu {
+         display: none;
+     }
+     .profileBox {
+         border-left: none;
+     }
+     .nums {
+         margin-bottom: 10px;
+     }  
+      .profileList {
+          display: none;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width:960px){
+.sideBar a{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.sideBar a i {
+    display: none;
+}
+}
+

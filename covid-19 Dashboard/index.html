@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Coronavirus (COVID-19) dashboard to show the dynamics of Сoronavirus distribution per country">
+        <meta name="author" content="Farzaneh Salehi">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Style Css-->
+        <link rel="stylesheet" href="Css/style.css">
+
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>
+            Covid 19 Tracker-Sokan Edition
+        </title>
+    </head>
+    <body>
+        <div class="container-fluid no-padd">
+            <div class="row no-margin">
+                <div class="col-md-2 no-padd">
+                    <div class="sideBar"  id="myTopnav">
+                        <div class="topMenu">
+                                <!-- covid 19 Tracker with logo-->
+                                <div class="titleSideBar">
+                                    <!-- blue circle-->
+                                    <div class="logoCovid">
+                                        <!-- D -->
+                                        <div class="logoD">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="txtTitleSideBar">
+                                    Covid 19 Tracker
+                                </div>
+                        </div>
+              <!-- firstmenu of side bar-->
+                        <div class="firstMenu">
+                            <a href="index.html" class="active" > <i class="fa fa-pie-chart" aria-hidden="true"></i>overview</a>
+                            <a href="users.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Users</a>
+                            <a href="#aboutUs"><i class="fa fa-users" aria-hidden="true"></i>About us</a>
+                            <a href="#contactUs"><i class="fa fa-at" aria-hidden="true"></i>Contact us</a>
+                            <a href="#Link4"><i class="fa fa-home"></i>Link Number 4</a>
+                            <a href="#Link5"><i class="fa fa-home"></i>Link Number 5</a>
+                        </div>
+                        <!-- second menu of side bar/below line-->
+                        <div class="logSettingMenu">
+                            <a href="#settings" class="active" > <i class="fa fa-cog" aria-hidden="true"></i>settings</a>
+                            <a href="#logOut"><i class="fa fa-sign-out" aria-hidden="true"></i>logOut</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                    </div>
+                </div>
+                <div class="col-md-10 ">
+                    <div class="header row">
+                         <!-- title of page -->
+                        <div class="titleHeader col-sm-7 col-md-7">
+                            <p class="titleOfProject">
+                                 Covid 19 Tracker-Sokan Edition
+                            </p>
+                        </div>
+                        <!-- search and notification-->
+                        <div class="notifMenu col-sm-2">
+                            <a href="#searchBar" class="col-sm-6"> <i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a href="#notification" class="col-sm-6"> <i class="fa fa-bell" aria-hidden="true"></i></a>
+                        </div>
+                         <!-- visit profile-->
+                        <div class="profile col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-8 col-8 profileBox">
+                                    <a class="profileName"></a>
+                                        Farzaneh Salehi
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-4">
+                                    <img src="Image/2.jpeg"/>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="cards row">
+                         <!-- Total card-->
+                    <div class="col-sm-3">
+                        <div class="nums">
+                            <h5 class="mb-0">
+                            <a id='confirmed-card' class="numsText">
+                                Total
+                            </a>
+                            <span id="confirmed-count" class="numbers">
+                                -
+                            </span>
+                        </h5>
+                        </div>
+                        
+                    </div>
+                     <!-- active card-->
+                    <div class="col-sm-3">
+                        <div class="nums">
+                             <h5 class="mb-0">
+                            <a id='active-card' class="numsText">
+                                active
+                            </a>
+                            <span id="active-count" class="numbers">
+                                -
+                            </span>
+                        </h5>
+                        </div>
+                       
+                    </div>
+                    <!-- recoverd card-->
+                    <div class="col-sm-3">
+                        <div class="nums">
+                            <h5 class="mb-0">
+                            <a id='recovered-card' class="numsText">
+                                recoverd
+                            </a>
+                            <span id="recovered-count" class="numbers">
+                                -
+                            </span>
+                        </h5>
+                        </div>
+                        
+                    </div>
+                    <!-- death card-->
+                    <div class="col-sm-3">
+                        <div class="nums">
+                        <h5 class="mb-0">
+                            <a id='death-card' class="numsText">
+                                death
+                            </a>
+                            <span id="death-count" class="numbers">
+                                -
+                            </span>
+                        </h5>
+                        </div>
+                    </div>
+                   
+
+                    </div>
+                    <!-- graph-->
+                    <div class="todayTrends borderBox">
+                        <div class="row">
+                            <div class="titleHeader col-sm-12">
+                                <p class="titleOfProject">
+                                    Total Covid 19 Graph
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="col-sm-10 offset-sm-1 tendConfirm">
+                                    <canvas class="line-chart" id="confirmed-case-chart" ></canvas>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+
+        <!-- graph and covid Data JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Optional JavaScript -->
+        <script src="Js/script.js"></script>
+        <script src="Js/main.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
