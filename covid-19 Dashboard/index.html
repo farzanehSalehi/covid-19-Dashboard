@@ -23,7 +23,7 @@
     <body>
         <div class="container-fluid no-padd">
             <div class="row no-margin">
-                <div class="col-md-2 no-padd">
+                <div class="col-md-3 no-padd hidden-xs">
                     <div class="sideBar"  id="myTopnav">
                         <div class="topMenu">
                                 <!-- covid 19 Tracker with logo-->
@@ -36,30 +36,30 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="txtTitleSideBar">
+                                <div class="txtTitleSideBar  text-muted">
                                     Covid 19 Tracker
                                 </div>
                         </div>
               <!-- firstmenu of side bar-->
                         <div class="firstMenu">
                             <a href="index.html" class="active" > <i class="fa fa-pie-chart" aria-hidden="true"></i>overview</a>
-                            <a href="users.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Users</a>
-                            <a href="#aboutUs"><i class="fa fa-users" aria-hidden="true"></i>About us</a>
-                            <a href="#contactUs"><i class="fa fa-at" aria-hidden="true"></i>Contact us</a>
-                            <a href="#Link4"><i class="fa fa-home"></i>Link Number 4</a>
-                            <a href="#Link5"><i class="fa fa-home"></i>Link Number 5</a>
+                            <a href="users.html"><i class="fa fa-ticket" aria-hidden="true"></i>Patients</a>
+                            <a href="#Link2"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Link Number 2</a>
+                            <a href="#Link3"><i class="fa fa-users" aria-hidden="true"></i>Link Number 3</a>
+                            <a href="#Link4"><i class="fa fa-user" aria-hidden="true"></i>Link Number 4</a>
+                            <a href="#Link5"><i class="fa fa-book" aria-hidden="true"></i>Link Number 5</a>
                         </div>
                         <!-- second menu of side bar/below line-->
                         <div class="logSettingMenu">
                             <a href="#settings" class="active" > <i class="fa fa-cog" aria-hidden="true"></i>settings</a>
                             <a href="#logOut"><i class="fa fa-sign-out" aria-hidden="true"></i>logOut</a>
                         </div>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
+                        <a href="javascript:void(0);" class="icon " onclick="myFunction()">
+                            <i class="fa fa-bars pull-right"></i>
                           </a>
                     </div>
                 </div>
-                <div class="col-md-10 ">
+                <div class="col-md-9 ">
                     <div class="header row">
                          <!-- title of page -->
                         <div class="titleHeader col-sm-7 col-md-7">
@@ -68,9 +68,9 @@
                             </p>
                         </div>
                         <!-- search and notification-->
-                        <div class="notifMenu col-sm-2">
-                            <a href="#searchBar" class="col-sm-6"> <i class="fa fa-search" aria-hidden="true"></i></a>
-                            <a href="#notification" class="col-sm-6"> <i class="fa fa-bell" aria-hidden="true"></i></a>
+                        <div class="notifMenu col-sm-2 hidden-xs">
+                            <a href="#searchBar" class="col-sm-6 pull-left"> <i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a href="#notification" class="col-sm-6 pull-right"> <i class="fa fa-bell" aria-hidden="true"></i></a>
                         </div>
                          <!-- visit profile-->
                         <div class="profile col-sm-3">
@@ -87,11 +87,11 @@
                             
                         </div>
                     </div>
-                    <div class="cards row">
+                    <div class="cards flex-container">
                          <!-- Total card-->
-                    <div class="col-sm-3">
+                    <div>
                         <div class="nums">
-                            <h5 class="mb-0">
+                            <h5 class="mCard">
                             <a id='confirmed-card' class="numsText">
                                 Total
                             </a>
@@ -103,9 +103,9 @@
                         
                     </div>
                      <!-- active card-->
-                    <div class="col-sm-3">
+                    <div>
                         <div class="nums">
-                             <h5 class="mb-0">
+                             <h5 class="mCard">
                             <a id='active-card' class="numsText">
                                 active
                             </a>
@@ -117,9 +117,9 @@
                        
                     </div>
                     <!-- recoverd card-->
-                    <div class="col-sm-3">
+                    <div>
                         <div class="nums">
-                            <h5 class="mb-0">
+                            <h5 class="mCard">
                             <a id='recovered-card' class="numsText">
                                 recoverd
                             </a>
@@ -131,9 +131,9 @@
                         
                     </div>
                     <!-- death card-->
-                    <div class="col-sm-3">
+                    <div>
                         <div class="nums">
-                        <h5 class="mb-0">
+                        <h5 class="mCard">
                             <a id='death-card' class="numsText">
                                 death
                             </a>
@@ -156,8 +156,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-11">
-                                <div class="col-sm-10 offset-sm-1 tendConfirm">
+                            <div class="col-sm-12">
+                                <div class="tendConfirm">
                                     <canvas class="line-chart" id="confirmed-case-chart" ></canvas>
                                     </div>
                             </div>

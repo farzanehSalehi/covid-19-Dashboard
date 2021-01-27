@@ -1,5 +1,5 @@
 let UIController = (() => {
-    let selectedCountry = 'Iran';
+    let selectedCountry = 'india';
     //This variable stores all the strings we use in the HTML to identify ids.
     let HTMLStrings = {
         confirmedCount: '#confirmed-count',

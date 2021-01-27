@@ -3,7 +3,7 @@ function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "sideBar") {
       x.className += " responsive";
-    } else {
+    }else {
       x.className = "sideBar";
     }
   } 
